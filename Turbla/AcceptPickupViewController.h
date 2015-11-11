@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  AcceptPickupViewController.h
 //  Turbla
 //
 //  Created by Patricia S Demorest on 11/8/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface AcceptPickupViewController : UIViewController
 
 
 @end

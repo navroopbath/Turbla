@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0DCB221BF324DE0037CF02 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0DCB211BF324DE0037CF02 /* MapKit.framework */; };
 		4DE5CD061BF02B8E00F5F8A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5CD051BF02B8E00F5F8A1 /* main.m */; };
 		4DE5CD091BF02B8E00F5F8A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5CD081BF02B8E00F5F8A1 /* AppDelegate.m */; };
-		4DE5CD0C1BF02B8E00F5F8A1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5CD0B1BF02B8E00F5F8A1 /* FirstViewController.m */; };
-		4DE5CD0F1BF02B8E00F5F8A1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5CD0E1BF02B8E00F5F8A1 /* SecondViewController.m */; };
+		4DE5CD0C1BF02B8E00F5F8A1 /* AcceptPickupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5CD0B1BF02B8E00F5F8A1 /* AcceptPickupViewController.m */; };
+		4DE5CD0F1BF02B8E00F5F8A1 /* EarningsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5CD0E1BF02B8E00F5F8A1 /* EarningsViewController.m */; };
 		4DE5CD121BF02B8E00F5F8A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE5CD101BF02B8E00F5F8A1 /* Main.storyboard */; };
 		4DE5CD141BF02B8E00F5F8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE5CD131BF02B8E00F5F8A1 /* Assets.xcassets */; };
 		4DE5CD171BF02B8E00F5F8A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE5CD151BF02B8E00F5F8A1 /* LaunchScreen.storyboard */; };
@@ -36,14 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D0DCB211BF324DE0037CF02 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4DE5CD011BF02B8E00F5F8A1 /* Turbla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turbla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE5CD051BF02B8E00F5F8A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DE5CD071BF02B8E00F5F8A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DE5CD081BF02B8E00F5F8A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4DE5CD0A1BF02B8E00F5F8A1 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		4DE5CD0B1BF02B8E00F5F8A1 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		4DE5CD0D1BF02B8E00F5F8A1 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		4DE5CD0E1BF02B8E00F5F8A1 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4DE5CD0A1BF02B8E00F5F8A1 /* AcceptPickupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcceptPickupViewController.h; sourceTree = "<group>"; };
+		4DE5CD0B1BF02B8E00F5F8A1 /* AcceptPickupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcceptPickupViewController.m; sourceTree = "<group>"; };
+		4DE5CD0D1BF02B8E00F5F8A1 /* EarningsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarningsViewController.h; sourceTree = "<group>"; };
+		4DE5CD0E1BF02B8E00F5F8A1 /* EarningsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarningsViewController.m; sourceTree = "<group>"; };
 		4DE5CD111BF02B8E00F5F8A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DE5CD131BF02B8E00F5F8A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DE5CD161BF02B8E00F5F8A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0DCB221BF324DE0037CF02 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 		4DE5CCF81BF02B8E00F5F8A1 = {
 			isa = PBXGroup;
 			children = (
+				4D0DCB211BF324DE0037CF02 /* MapKit.framework */,
 				4DE5CD031BF02B8E00F5F8A1 /* Turbla */,
 				4DE5CD201BF02B8E00F5F8A1 /* TurblaTests */,
 				4DE5CD2B1BF02B8E00F5F8A1 /* TurblaUITests */,
@@ -106,10 +110,10 @@
 			children = (
 				4DE5CD071BF02B8E00F5F8A1 /* AppDelegate.h */,
 				4DE5CD081BF02B8E00F5F8A1 /* AppDelegate.m */,
-				4DE5CD0A1BF02B8E00F5F8A1 /* FirstViewController.h */,
-				4DE5CD0B1BF02B8E00F5F8A1 /* FirstViewController.m */,
-				4DE5CD0D1BF02B8E00F5F8A1 /* SecondViewController.h */,
-				4DE5CD0E1BF02B8E00F5F8A1 /* SecondViewController.m */,
+				4DE5CD0A1BF02B8E00F5F8A1 /* AcceptPickupViewController.h */,
+				4DE5CD0B1BF02B8E00F5F8A1 /* AcceptPickupViewController.m */,
+				4DE5CD0D1BF02B8E00F5F8A1 /* EarningsViewController.h */,
+				4DE5CD0E1BF02B8E00F5F8A1 /* EarningsViewController.m */,
 				4DE5CD101BF02B8E00F5F8A1 /* Main.storyboard */,
 				4DE5CD131BF02B8E00F5F8A1 /* Assets.xcassets */,
 				4DE5CD151BF02B8E00F5F8A1 /* LaunchScreen.storyboard */,
@@ -275,9 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DE5CD0F1BF02B8E00F5F8A1 /* SecondViewController.m in Sources */,
+				4DE5CD0F1BF02B8E00F5F8A1 /* EarningsViewController.m in Sources */,
 				4DE5CD091BF02B8E00F5F8A1 /* AppDelegate.m in Sources */,
-				4DE5CD0C1BF02B8E00F5F8A1 /* FirstViewController.m in Sources */,
+				4DE5CD0C1BF02B8E00F5F8A1 /* AcceptPickupViewController.m in Sources */,
 				4DE5CD061BF02B8E00F5F8A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +506,7 @@
 				4DE5CD331BF02B8E00F5F8A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DE5CD341BF02B8E00F5F8A1 /* Build configuration list for PBXNativeTarget "TurblaTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +515,7 @@
 				4DE5CD361BF02B8E00F5F8A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DE5CD371BF02B8E00F5F8A1 /* Build configuration list for PBXNativeTarget "TurblaUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +524,7 @@
 				4DE5CD391BF02B8E00F5F8A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

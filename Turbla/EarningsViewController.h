@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  EarningsViewController.h
 //  Turbla
 //
 //  Created by Patricia S Demorest on 11/8/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface EarningsViewController : UIViewController
 
 
 @end

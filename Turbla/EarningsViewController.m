@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  EarningsViewController.m
 //  Turbla
 //
 //  Created by Patricia S Demorest on 11/8/15.
 //  Copyright © 2015 Turbla. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "EarningsViewController.h"
 
-@interface FirstViewController ()
+@interface EarningsViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation EarningsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
