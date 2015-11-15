@@ -7,6 +7,8 @@
 //
 
 #import "AcceptPickupViewController.h"
+#import "TimerView.h"
+#import "EnRouteViewController.h"
 
 @import MapKit;
 
@@ -15,6 +17,10 @@
 @property (nonatomic) CLLocationManager *locationManager;
 @property (nonatomic) NSString *pickUpAddress;
 @property (nonatomic) NSTimer *pickUpTimer;
+@property (nonatomic) NSTimer *updateTimer;
+// TODO: make sure to reset seconds left
+@property (nonatomic) CGFloat secondsLeft;
+
 
 @property (nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic) IBOutlet UILabel *noAvailablePickUpsLabel;
@@ -22,7 +28,7 @@
 // layered views when pick up is available
 @property (nonatomic) IBOutlet UIView *greyShield;
 @property (nonatomic) IBOutlet UILabel *pickUpAddressLabel;
-@property (nonatomic) IBOutlet UIView *timerContainer;
+@property (nonatomic) IBOutlet TimerView *timerView;
 @property (nonatomic) IBOutlet UIButton *acceptPickUpButton;
 
 @end
@@ -43,7 +49,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     
     // disclaimer: a lot of hardcoded stuff, this is not fully functional; for demonstration purposes only
-    self.pickUpAddress = NSLocalizedString(@"Pick up available at Rebecca Minkoff - 2124 Fillmore St, San Francisco, CA 94115", nil);
+    self.pickUpAddress = NSLocalizedString(@"Pick up available at Rebecca Minkoff - 2124 Fillmore St, San Francisco, CA 94115 \n 7 items", nil);
     self.pickUpTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(displayNewPickUp) userInfo:nil repeats:NO];
     
 }
@@ -95,6 +101,21 @@
         self.greyShield.alpha = 0.7f;
     }];
     
+    self.updateTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTimerView:) userInfo:nil repeats:YES];
+    self.secondsLeft = 20;
+    
+}
+
+- (void)updateTimerView:(NSTimer *)timer {
+    
+    self.secondsLeft -= 1;
+    self.timerView.percent = self.secondsLeft / 20.0f;
+    [self.timerView setNeedsDisplay];
+    
+    if (self.secondsLeft == 0) {
+        [self.updateTimer invalidate];
+        [self.greyShield removeFromSuperview];
+    }
 }
 
 #pragma mark - CLLLocationManagerDelegate
@@ -106,5 +127,25 @@
     [self.mapView setRegion:userRegion animated:YES];
     
 }
+
+#pragma mark - IBActions
+
+- (IBAction)acceptPickUpButtonTapped:(id)sender {
+    
+    [self performSegueWithIdentifier:@"enRouteSegue" sender:self];
+    
+}
+
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.destinationViewController isKindOfClass:[EnRouteViewController class]]) {
+        EnRouteViewController *enRouteViewController = segue.destinationViewController;
+        enRouteViewController.destination = self.pickUpAddress;
+    }
+    
+}
+
 
 @end
