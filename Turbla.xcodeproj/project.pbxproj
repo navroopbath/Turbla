@@ -19,6 +19,7 @@
 		4DE5CD2D1BF02B8E00F5F8A1 /* TurblaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5CD2C1BF02B8E00F5F8A1 /* TurblaUITests.m */; };
 		4DFA51511BF93248009A7053 /* TimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA51501BF93248009A7053 /* TimerView.m */; };
 		4DFA51541BF949B6009A7053 /* EnRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA51531BF949B6009A7053 /* EnRouteViewController.m */; };
+		4DFA51571BF96C74009A7053 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA51561BF96C74009A7053 /* MapPin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		4DFA51501BF93248009A7053 /* TimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerView.m; sourceTree = "<group>"; };
 		4DFA51521BF949B6009A7053 /* EnRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnRouteViewController.h; sourceTree = "<group>"; };
 		4DFA51531BF949B6009A7053 /* EnRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnRouteViewController.m; sourceTree = "<group>"; };
+		4DFA51551BF96C74009A7053 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		4DFA51561BF96C74009A7053 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				4DE5CD0B1BF02B8E00F5F8A1 /* AcceptPickupViewController.m */,
 				4DFA514F1BF93248009A7053 /* TimerView.h */,
 				4DFA51501BF93248009A7053 /* TimerView.m */,
+				4DFA51551BF96C74009A7053 /* MapPin.h */,
+				4DFA51561BF96C74009A7053 /* MapPin.m */,
 				4DFA51521BF949B6009A7053 /* EnRouteViewController.h */,
 				4DFA51531BF949B6009A7053 /* EnRouteViewController.m */,
 				4DE5CD0D1BF02B8E00F5F8A1 /* EarningsViewController.h */,
@@ -293,6 +298,7 @@
 				4DFA51511BF93248009A7053 /* TimerView.m in Sources */,
 				4DE5CD0F1BF02B8E00F5F8A1 /* EarningsViewController.m in Sources */,
 				4DE5CD091BF02B8E00F5F8A1 /* AppDelegate.m in Sources */,
+				4DFA51571BF96C74009A7053 /* MapPin.m in Sources */,
 				4DE5CD0C1BF02B8E00F5F8A1 /* AcceptPickupViewController.m in Sources */,
 				4DE5CD061BF02B8E00F5F8A1 /* main.m in Sources */,
 				4DFA51541BF949B6009A7053 /* EnRouteViewController.m in Sources */,

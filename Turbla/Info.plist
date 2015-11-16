@@ -46,5 +46,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Turbla needs your location in order to guide you to your destination.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Turbla needs your location in order to guide you to your destination.</string>
 </dict>
 </plist>

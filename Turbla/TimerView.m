@@ -34,14 +34,14 @@
     
     // Create our arc, with the correct angles
     [bezierPath addArcWithCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)
-                          radius:rect.size.width / 4
+                          radius:rect.size.width / 3
                       startAngle:startAngle
                         endAngle:self.percent * (endAngle - startAngle) + startAngle
                        clockwise:YES];
     
     // Set the display for the path, and stroke it
-    bezierPath.lineWidth = 7.0f;
-    [[UIColor redColor] setStroke];
+    bezierPath.lineWidth = 4.0f;
+    [[UIColor colorWithRed:243.0f/255.0f green:116.0f/255.0f blue:3.0f/255.0f alpha:1.0f] setStroke];
     [bezierPath stroke];
     
     self.timeLeftLabel.text = [NSString stringWithFormat:@"%.f", self.percent * 20];

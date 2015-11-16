@@ -83,33 +83,35 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUP-9x-4fG" userLabel="New pick up view">
-                            <rect key="frame" x="0.0" y="134" width="320" height="300"/>
+                            <rect key="frame" x="0.0" y="194" width="320" height="180"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick up available at 1 Sproul Hall, Berkeley, CA 94704" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AP-5K-Amw">
-                                    <rect key="frame" x="8" y="0.0" width="304" height="36"/>
+                                    <rect key="frame" x="8" y="5" width="304" height="36"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpD-5C-E8a">
-                                    <rect key="frame" x="94" y="256" width="133" height="44"/>
-                                    <color key="backgroundColor" red="0.14164273899999999" green="0.038710029680000001" blue="0.50674715910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="94" y="131" width="133" height="44"/>
+                                    <color key="backgroundColor" red="0.95294117647058818" green="0.45490196078431372" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="1xU-o4-2SN"/>
                                         <constraint firstAttribute="width" constant="133" id="W9h-fK-eU3"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                    <state key="normal" title="Accept pick up"/>
+                                    <state key="normal" title="Accept pick up">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
                                     <connections>
                                         <action selector="acceptPickUpButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="NLf-GU-5zE"/>
                                     </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtM-au-xlW" userLabel="Timer view" customClass="TimerView">
-                                    <rect key="frame" x="60" y="46" width="200" height="200"/>
+                                    <rect key="frame" x="120" y="46" width="80" height="80"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W68-8Z-OuQ">
-                                            <rect key="frame" x="82" y="82" width="37" height="36"/>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                            <rect key="frame" x="28" y="28" width="25" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -117,8 +119,8 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="W68-8Z-OuQ" firstAttribute="centerY" secondItem="QtM-au-xlW" secondAttribute="centerY" id="7jQ-nG-0a5"/>
-                                        <constraint firstAttribute="height" constant="200" id="G2U-S7-PwR"/>
-                                        <constraint firstAttribute="width" constant="200" id="M0z-ZN-BpU"/>
+                                        <constraint firstAttribute="height" constant="80" id="G2U-S7-PwR"/>
+                                        <constraint firstAttribute="width" constant="80" id="M0z-ZN-BpU"/>
                                         <constraint firstItem="W68-8Z-OuQ" firstAttribute="centerX" secondItem="QtM-au-xlW" secondAttribute="centerX" id="RY4-ar-KWI"/>
                                     </constraints>
                                     <connections>
@@ -128,15 +130,15 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="IpD-5C-E8a" firstAttribute="top" secondItem="QtM-au-xlW" secondAttribute="bottom" constant="10" id="3Ot-ih-50j"/>
+                                <constraint firstItem="IpD-5C-E8a" firstAttribute="top" secondItem="QtM-au-xlW" secondAttribute="bottom" constant="5" id="3Ot-ih-50j"/>
                                 <constraint firstItem="QtM-au-xlW" firstAttribute="centerX" secondItem="UUP-9x-4fG" secondAttribute="centerX" id="4zq-R3-G6r"/>
                                 <constraint firstItem="3AP-5K-Amw" firstAttribute="leading" secondItem="UUP-9x-4fG" secondAttribute="leading" constant="8" id="9sz-aD-FTl"/>
                                 <constraint firstAttribute="trailing" secondItem="3AP-5K-Amw" secondAttribute="trailing" constant="8" id="N8w-gB-w9W"/>
-                                <constraint firstItem="3AP-5K-Amw" firstAttribute="top" secondItem="UUP-9x-4fG" secondAttribute="top" id="Seb-Id-T0E"/>
+                                <constraint firstItem="3AP-5K-Amw" firstAttribute="top" secondItem="UUP-9x-4fG" secondAttribute="top" constant="5" id="Seb-Id-T0E"/>
                                 <constraint firstItem="IpD-5C-E8a" firstAttribute="centerX" secondItem="UUP-9x-4fG" secondAttribute="centerX" id="XUH-rg-0Hc"/>
                                 <constraint firstItem="IpD-5C-E8a" firstAttribute="centerX" secondItem="UUP-9x-4fG" secondAttribute="centerX" id="sKb-Uu-Rpi"/>
-                                <constraint firstItem="QtM-au-xlW" firstAttribute="top" secondItem="3AP-5K-Amw" secondAttribute="bottom" constant="10" id="sgW-eg-xHa"/>
-                                <constraint firstAttribute="bottom" secondItem="IpD-5C-E8a" secondAttribute="bottom" id="uIf-jQ-cXl"/>
+                                <constraint firstItem="QtM-au-xlW" firstAttribute="top" secondItem="3AP-5K-Amw" secondAttribute="bottom" constant="5" id="sgW-eg-xHa"/>
+                                <constraint firstAttribute="bottom" secondItem="IpD-5C-E8a" secondAttribute="bottom" constant="5" id="uIf-jQ-cXl"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
