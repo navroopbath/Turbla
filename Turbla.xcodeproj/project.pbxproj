@@ -93,6 +93,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DAD26401BF9D48E00031458 /* Accept Pick Up */ = {
+			isa = PBXGroup;
+			children = (
+				4DE5CD0A1BF02B8E00F5F8A1 /* AcceptPickupViewController.h */,
+				4DE5CD0B1BF02B8E00F5F8A1 /* AcceptPickupViewController.m */,
+				4DFA514F1BF93248009A7053 /* TimerView.h */,
+				4DFA51501BF93248009A7053 /* TimerView.m */,
+				4DFA51551BF96C74009A7053 /* MapPin.h */,
+				4DFA51561BF96C74009A7053 /* MapPin.m */,
+			);
+			name = "Accept Pick Up";
+			sourceTree = "<group>";
+		};
+		4DAD26431BF9D4D100031458 /* En Route */ = {
+			isa = PBXGroup;
+			children = (
+				4DFA51521BF949B6009A7053 /* EnRouteViewController.h */,
+				4DFA51531BF949B6009A7053 /* EnRouteViewController.m */,
+			);
+			name = "En Route";
+			sourceTree = "<group>";
+		};
+		4DAD26441BF9D50500031458 /* Earnings */ = {
+			isa = PBXGroup;
+			children = (
+				4DE5CD0D1BF02B8E00F5F8A1 /* EarningsViewController.h */,
+				4DE5CD0E1BF02B8E00F5F8A1 /* EarningsViewController.m */,
+			);
+			name = Earnings;
+			sourceTree = "<group>";
+		};
 		4DE5CCF81BF02B8E00F5F8A1 = {
 			isa = PBXGroup;
 			children = (
@@ -119,16 +150,9 @@
 			children = (
 				4DE5CD071BF02B8E00F5F8A1 /* AppDelegate.h */,
 				4DE5CD081BF02B8E00F5F8A1 /* AppDelegate.m */,
-				4DE5CD0A1BF02B8E00F5F8A1 /* AcceptPickupViewController.h */,
-				4DE5CD0B1BF02B8E00F5F8A1 /* AcceptPickupViewController.m */,
-				4DFA514F1BF93248009A7053 /* TimerView.h */,
-				4DFA51501BF93248009A7053 /* TimerView.m */,
-				4DFA51551BF96C74009A7053 /* MapPin.h */,
-				4DFA51561BF96C74009A7053 /* MapPin.m */,
-				4DFA51521BF949B6009A7053 /* EnRouteViewController.h */,
-				4DFA51531BF949B6009A7053 /* EnRouteViewController.m */,
-				4DE5CD0D1BF02B8E00F5F8A1 /* EarningsViewController.h */,
-				4DE5CD0E1BF02B8E00F5F8A1 /* EarningsViewController.m */,
+				4DAD26401BF9D48E00031458 /* Accept Pick Up */,
+				4DAD26431BF9D4D100031458 /* En Route */,
+				4DAD26441BF9D50500031458 /* Earnings */,
 				4DE5CD101BF02B8E00F5F8A1 /* Main.storyboard */,
 				4DE5CD131BF02B8E00F5F8A1 /* Assets.xcassets */,
 				4DE5CD151BF02B8E00F5F8A1 /* LaunchScreen.storyboard */,
